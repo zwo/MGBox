@@ -10,6 +10,10 @@
 #define DEFAULT_WIDTH     304.0
 #define DEFAULT_LEFT_MARGIN 8.0
 
+@interface MGBox ()
+- (void)drawLine:(UIView *)line fromLines:(NSArray *)lines at:(CGFloat)y;
+@end
+
 @implementation MGBox
 
 @synthesize topLines, middleLines, bottomLines, content, isReplacement;
