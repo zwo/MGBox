@@ -25,6 +25,8 @@ Complex box layouts created with simple code.
 ![IfAlarm Screenshot 1](http://cloud.github.com/downloads/sobri909/MGBox/Screenshot1.png)
 ![IfAlarm Screenshot 2](http://cloud.github.com/downloads/sobri909/MGBox/Screenshot2.png)
 
+(From [IfAlarm](http://ifalarm.com))
+
 ### The demo app:
 
 ![Demo App Screenshot](http://cloud.github.com/downloads/sobri909/MGBox/DemoAppScreenshot.png)
