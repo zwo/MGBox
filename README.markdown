@@ -1,3 +1,11 @@
+# NOTICE: MGBox has been superceded by MGBox2
+
+https://github.com/sobri909/MGBox2
+
+`MGBox2` provides all the functionality of `MGBox`, with the addition of grid layouts (simmilar to `UICollectionViews` or CSS's `float:left`), and with a bunch of blocks based convenience methods for gesture recognisers, observers, control events, and custom events.
+
+I've put `MGBox2` up as a separate project due to backward compatibility breaks. 
+
 # MGBox - A UITableView replacement with simplified API
 
 Designed for rapid table creation with minimal code, easy customisation, attractive default styling, and with most common design patterns automated without need for fidgety UIView tweaking.
