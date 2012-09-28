@@ -1,4 +1,4 @@
-# NOTICE: MGBox has been superceded by MGBox2
+# NOTICE: MGBox has been superseded by MGBox2
 
 https://github.com/sobri909/MGBox2
 
