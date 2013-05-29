@@ -7,8 +7,8 @@
 #import "MGBoxLine.h"
 #import "MGButton.h"
 
-#define DEFAULT_HEIGHT      40.0
-#define DEFAULT_WIDTH      304.0
+#define DEFAULT_HEIGHT  (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 40.0:80.0
+#define DEFAULT_WIDTH   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 304.0:752.0
 #define DEFAULT_LINE_PADDING 4.0
 #define DEFAULT_ITEM_PADDING 3.0
 
@@ -31,6 +31,7 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        CGFloat sizeAdjustFactor=(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 1:2;
         self.backgroundColor = [UIColor clearColor];
         self.contentsLeft = [NSMutableArray array];
         self.contentsRight = [NSMutableArray array];
@@ -49,9 +50,10 @@
         self.linePadding = DEFAULT_LINE_PADDING;
         self.itemPadding = DEFAULT_ITEM_PADDING;
         self.sidePrecedence = MGSidePrecedenceLeft;
-        self.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16];
+        self.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16*sizeAdjustFactor];
         self.textColor = [UIColor blackColor];
         self.underlineType = MGUnderlineBottom;
+        
     }
     return self;
 }
@@ -75,7 +77,8 @@
 + (id)multilineWithText:(NSString *)text font:(UIFont *)font
                 padding:(CGFloat)padding width:(CGFloat)width {
     width = width ? width : DEFAULT_WIDTH;
-    font = font ? font : [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
+    CGFloat sizeAdjustFactor=(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 1:2;
+    font = font ? font : [UIFont fontWithName:@"HelveticaNeue-Light" size:14*sizeAdjustFactor];
 
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.font = font;

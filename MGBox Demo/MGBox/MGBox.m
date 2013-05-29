@@ -7,7 +7,7 @@
 #import "MGBox.h"
 #import "MGBoxLine.h"
 
-#define DEFAULT_WIDTH     304.0
+#define DEFAULT_WIDTH (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 304.0:752.0
 #define DEFAULT_LEFT_MARGIN 8.0
 
 @interface MGBox ()

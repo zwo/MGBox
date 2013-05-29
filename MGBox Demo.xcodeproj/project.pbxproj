@@ -23,6 +23,8 @@
 		C98D3E81156EDF280078A785 /* MGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D3E7B156EDF270078A785 /* MGScrollView.m */; };
 		C98D3E82156EDF280078A785 /* MGStyledBox.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D3E7D156EDF270078A785 /* MGStyledBox.m */; };
 		C9CD1EDC156EB18E00E817B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD1EDB156EB18E00E817B1 /* QuartzCore.framework */; };
+		E37C1D941754F3DB00659C54 /* ViewController~ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C1D931754F3DB00659C54 /* ViewController~ipad.m */; };
+		E37C1D961754F44500659C54 /* MainStoryboard~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37C1D951754F44500659C54 /* MainStoryboard~ipad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,9 @@
 		C98D3E7C156EDF270078A785 /* MGStyledBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGStyledBox.h; sourceTree = "<group>"; };
 		C98D3E7D156EDF270078A785 /* MGStyledBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGStyledBox.m; sourceTree = "<group>"; };
 		C9CD1EDB156EB18E00E817B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E37C1D921754F3DA00659C54 /* ViewController~ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController~ipad.h"; sourceTree = "<group>"; };
+		E37C1D931754F3DB00659C54 /* ViewController~ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController~ipad.m"; sourceTree = "<group>"; };
+		E37C1D951754F44500659C54 /* MainStoryboard~ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard~ipad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +112,11 @@
 				C91CE3D0156D757E0025C722 /* MainStoryboard.storyboard */,
 				C91CE3D3156D757E0025C722 /* ViewController.h */,
 				C91CE3D4156D757E0025C722 /* ViewController.m */,
+				E37C1D921754F3DA00659C54 /* ViewController~ipad.h */,
+				E37C1D931754F3DB00659C54 /* ViewController~ipad.m */,
 				C91CE3C5156D757E0025C722 /* Supporting Files */,
 				C91CE3ED156D78740025C727 /* Images */,
+				E37C1D951754F44500659C54 /* MainStoryboard~ipad.storyboard */,
 			);
 			path = "MGBox Demo";
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				C91CE3D2156D757E0025C722 /* MainStoryboard.storyboard in Resources */,
 				C91CE3ED156D78740025C724 /* home@2x.png in Resources */,
 				C91CE3ED156D78740025C726 /* home.png in Resources */,
+				E37C1D961754F44500659C54 /* MainStoryboard~ipad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +233,7 @@
 				C98D3E80156EDF280078A785 /* MGButton.m in Sources */,
 				C98D3E81156EDF280078A785 /* MGScrollView.m in Sources */,
 				C98D3E82156EDF280078A785 /* MGStyledBox.m in Sources */,
+				E37C1D941754F3DB00659C54 /* ViewController~ipad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +310,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGBox Demo/MGBox Demo-Prefix.pch";
 				INFOPLIST_FILE = "MGBox Demo/MGBox Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "MGBox Demo";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -311,7 +323,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MGBox Demo/MGBox Demo-Prefix.pch";
 				INFOPLIST_FILE = "MGBox Demo/MGBox Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "MGBox Demo";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

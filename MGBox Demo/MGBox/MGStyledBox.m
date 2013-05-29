@@ -6,7 +6,7 @@
 
 #import "MGStyledBox.h"
 
-#define DEFAULT_WIDTH          304.0
+#define DEFAULT_WIDTH   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 304.0:752.0
 #define DEFAULT_TOP_MARGIN      10.0
 #define DEFAULT_LEFT_MARGIN      8.0
 #define CORNER_RADIUS            4.0
